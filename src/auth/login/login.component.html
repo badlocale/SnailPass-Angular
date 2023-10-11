@@ -1,0 +1,78 @@
+<style>
+    @import "login.component.scss";
+</style>
+
+<div class="content" role="main">
+    <div class="snailpass-logo">
+        <img src="../assets/images/snailpass-logo.svg">
+    </div>
+
+    <h2> 
+        <span class="white-span">Snail</span>  
+        <span class="blue-span">Pass</span>
+    </h2>
+    
+    <p>simple password manager</p>
+
+    <form [formGroup]="loginForm" class="login-form">
+        <tui-input formControlName="email" [tuiTextfieldCleaner]="true" [pseudoInvalid]="false">
+            E-mail
+            <input tuiTextfield/>
+        </tui-input>
+        <tui-input-password formControlName="password">
+            Password
+            <input tuiTextfield/>
+        </tui-input-password>
+    </form>
+
+    <div class="button-container">
+        <button tuiButton>
+            Sign in
+        </button>
+        <button tuiButton>
+            Sign up
+        </button>
+    </div>
+
+    <div class="link-button-container">
+        <a
+        tuiIconButton
+        type="button"
+        href="https://github.com/badlocale/SnailPass-Desktop-Client"
+        shape="rounded"
+        matTooltip="Windows"
+        routerLink="."
+        color="accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24.607 23.447" >
+            <title>Windows logo</title>
+            <path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z"/>
+          </svg>
+        </a>
+        <a
+        tuiIconButton
+        type="button"
+        href="https://github.com/IlyaYDen/SnailPass-Android-Client"
+        shape="rounded"
+        matTooltip="Android"
+        routerLink="."
+        color="accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24.607 23.447">
+            <title>Android logo</title>
+            <path d="M16.61 15.15C16.15 15.15 15.77 14.78 15.77 14.32S16.15 13.5 16.61 13.5H16.61C17.07 13.5 17.45 13.86 17.45 14.32C17.45 14.78 17.07 15.15 16.61 15.15M7.41 15.15C6.95 15.15 6.57 14.78 6.57 14.32C6.57 13.86 6.95 13.5 7.41 13.5H7.41C7.87 13.5 8.24 13.86 8.24 14.32C8.24 14.78 7.87 15.15 7.41 15.15M16.91 10.14L18.58 7.26C18.67 7.09 18.61 6.88 18.45 6.79C18.28 6.69 18.07 6.75 18 6.92L16.29 9.83C14.95 9.22 13.5 8.9 12 8.91C10.47 8.91 9 9.24 7.73 9.82L6.04 6.91C5.95 6.74 5.74 6.68 5.57 6.78C5.4 6.87 5.35 7.08 5.44 7.25L7.1 10.13C4.25 11.69 2.29 14.58 2 18H22C21.72 14.59 19.77 11.7 16.91 10.14H16.91Z"/>
+          </svg>
+        </a>
+        <a
+        tuiIconButton
+        type="button"
+        href="https://github.com/rebmanop/SnailPass-Server"
+        shape="rounded"
+        matTooltip="Server"
+        routerLink="."
+        color="accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24.607 23.447">
+            <title>Server logo</title>
+            <path d="M4,1H20A1,1 0 0,1 21,2V6A1,1 0 0,1 20,7H4A1,1 0 0,1 3,6V2A1,1 0 0,1 4,1M4,9H20A1,1 0 0,1 21,10V14A1,1 0 0,1 20,15H4A1,1 0 0,1 3,14V10A1,1 0 0,1 4,9M4,17H20A1,1 0 0,1 21,18V22A1,1 0 0,1 20,23H4A1,1 0 0,1 3,22V18A1,1 0 0,1 4,17M9,5H10V3H9V5M9,13H10V11H9V13M9,21H10V19H9V21M5,3V5H7V3H5M5,11V13H7V11H5M5,19V21H7V19H5Z"/>
+          </svg>
+        </a>
+      </div>
+</div>
