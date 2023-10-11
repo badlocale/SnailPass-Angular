@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+form > tui-input, tui-input-password {
+    width: 100%;
+    padding: 4px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%
+}
+
+.button-container > button {
+    flex-grow: 1;
+    margin: 4px;
+}
+
+a {
+    display: inline-block;
+    color: var(--tui-text-01);
+    padding: 10px;
+    text-decoration: none;
+}
+
+:hover > a {
+    text-decoration: underline;
+}

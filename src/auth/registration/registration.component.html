@@ -1,1 +1,32 @@
-<p>Registration works!</p>
+<style>
+    @import "registration.component.scss";
+</style>
+
+<div class="content" role="main">
+    <form [formGroup]="registrationForm" class="login-form">
+        <tui-input formControlName="email" [tuiTextfieldCleaner]="true">
+            E-mail
+            <input tuiTextfield/>
+        </tui-input>
+        <tui-input-password formControlName="password">
+            Password
+            <input tuiTextfield/>
+        </tui-input-password>
+        <tui-input-password formControlName="passwordConfirmation">
+            Confirm password
+            <input tuiTextfield/>
+        </tui-input-password>
+    </form>
+
+    <div class="button-container">
+        <button tuiButton>
+            Sign up
+        </button>
+    </div>
+
+    <div>
+        <a href="/auth/login">
+            Back to login
+        </a>
+    </div>
+</div>

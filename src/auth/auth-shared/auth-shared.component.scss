@@ -14,11 +14,6 @@
     box-sizing: border-box;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 0s 600000s, color 0s 600000s;
-}
-
 .content {
     display: flex;
     margin: 0 auto;
@@ -44,42 +39,34 @@ h2 {
 
 p {
     font-size: large;
-    color: white;
+    color: var(--tui-text-01);
     margin-bottom: 40px;
 }
 
-.snailpass-logo {
+.logo {
     align-self: center;
 }
 
-.snailpass-logo > img {
+.logo > img {
     max-width: 150px;
     margin-left: 5%;
-}
-
-form > tui-input, tui-input-password {
-    width: 100%;
-    padding: 4px;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%
-}
-
-.button-container > button {
-    flex-grow: 1;
-    margin: 4px;
+    padding-bottom: 20px;
 }
 
 .link-button-container > a {
     background-color: transparent;
     --tui-primary: transparent;
-    padding: 8px;
-    width: 75px;
-    height: 75px;
+    margin: 8px;
+    width: 60px;
+    height: 60px;
+}
+
+:hover .link-button-container a {
+    --tui-primary-hover: white;
+}
+
+.link-button-container :hover path {
+    fill: var(--tui-base-01);
 }
 
 .link-button-container {

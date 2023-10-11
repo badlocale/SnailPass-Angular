@@ -6,13 +6,12 @@ import { LoginComponent } from 'src/auth/login/login.component';
 import { RegistrationComponent } from 'src/auth/registration/registration.component';
 
 const authRoutes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent }
 ]
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/auth', pathMatch: 'full' },
+  { path: '', redirectTo: '/auth/login', pathMatch: 'full' },
   { path: 'auth', component: AuthSharedComponent, children: authRoutes }
 ];
 

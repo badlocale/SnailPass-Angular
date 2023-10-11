@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { tuiButtonOptionsProvider } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +9,7 @@ import { tuiButtonOptionsProvider } from '@taiga-ui/core';
 export class LoginComponent {
   loginForm = new FormGroup(
     {
-      email: new FormControl('', Validators.required), 
+      email: new FormControl(), 
       password:  new FormControl()
     }
   );

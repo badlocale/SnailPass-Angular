@@ -1,60 +1,5 @@
-:host {
-    --tui-primary: #373a3f;
-    --tui-primary-hover: #56A4FF;
-    --tui-error-fill: #e48787;
-    --tui-base-01: #2E3034;
-    --tui-base-03: transparent;
-    --tui-text-01: white;
-    --tui-text-02: #53565B;
-    --tui-text-03: #53565B;
-    --tui-autofill: #2E3034;
-}
-
 * {
     box-sizing: border-box;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 0s 600000s, color 0s 600000s;
-}
-
-.content {
-    display: flex;
-    margin: 0 auto;
-    max-width: 350px;
-    padding-top: 4%;
-    flex-direction: column;
-    text-align: center;
-    height: 100%;
-}
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.white-span {
-    color: white;
-}
-
-.blue-span {
-    color: #56A4FF;
-}
-
-p {
-    font-size: large;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.snailpass-logo {
-    align-self: center;
-}
-
-.snailpass-logo > img {
-    max-width: 150px;
-    margin-left: 5%;
 }
 
 form > tui-input, tui-input-password {
@@ -74,21 +19,13 @@ form > tui-input, tui-input-password {
     margin: 4px;
 }
 
-.link-button-container > a {
-    background-color: transparent;
-    --tui-primary: transparent;
-    padding: 8px;
-    width: 75px;
-    height: 75px;
+a {
+    display: inline-block;
+    color: var(--tui-text-01);
+    padding: 10px;
+    text-decoration: none;
 }
 
-.link-button-container {
-    bottom: 0;
-    align-self: center;
-    position: absolute;
-    padding-bottom: 1%;
-}
-
-path {
-    fill: white;
+:hover > a {
+    text-decoration: underline;
 }
